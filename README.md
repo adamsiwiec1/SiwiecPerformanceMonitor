@@ -1,2 +1,2 @@
 # SiwiecPerformanceMonitor
-Template for a basic performance monitor desktop application using Windows Forms. (using c#)
+Template using C# for a basic performance monitor desktop application using Visual Studio 2019 and Windows Forms (.NET)
