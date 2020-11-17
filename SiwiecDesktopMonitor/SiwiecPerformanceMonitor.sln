@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiwiecPerformanceMonitor", "SiwiecDesktopMonitor\SiwiecPerformanceMonitor.csproj", "{AEEAEDCD-B442-4E40-ADB3-ED0728C93762}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{84AFE9A1-4450-49FF-B8E5-C50E19B06F95}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{AEEAEDCD-B442-4E40-ADB3-ED0728C93762}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AEEAEDCD-B442-4E40-ADB3-ED0728C93762}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AEEAEDCD-B442-4E40-ADB3-ED0728C93762}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84AFE9A1-4450-49FF-B8E5-C50E19B06F95}.Debug|Any CPU.ActiveCfg = Debug
+		{84AFE9A1-4450-49FF-B8E5-C50E19B06F95}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
