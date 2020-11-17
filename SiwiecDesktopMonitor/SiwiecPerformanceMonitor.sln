@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30611.23
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiwiecDesktopMonitor", "SiwiecDesktopMonitor\SiwiecDesktopMonitor.csproj", "{AEEAEDCD-B442-4E40-ADB3-ED0728C93762}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SiwiecPerformanceMonitor", "SiwiecDesktopMonitor\SiwiecPerformanceMonitor.csproj", "{AEEAEDCD-B442-4E40-ADB3-ED0728C93762}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
