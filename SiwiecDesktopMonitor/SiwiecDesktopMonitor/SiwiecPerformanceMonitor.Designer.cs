@@ -152,7 +152,7 @@
             this.label1.Cursor = System.Windows.Forms.Cursors.Default;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.label1.Location = new System.Drawing.Point(509, 52);
+            this.label1.Location = new System.Drawing.Point(508, 48);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(177, 36);
             this.label1.TabIndex = 8;
@@ -245,7 +245,6 @@
             this.btn_enter.TabIndex = 18;
             this.btn_enter.Text = "Enter";
             this.btn_enter.UseVisualStyleBackColor = true;
-            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click_1);
             // 
             // label7
             // 
@@ -346,7 +345,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.ClientSize = new System.Drawing.Size(695, 345);
+            this.ClientSize = new System.Drawing.Size(699, 345);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);

@@ -14,7 +14,7 @@ namespace SiwiecDesktopMonitor
         /// The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main(object sender, EventArgs e)
+        static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
