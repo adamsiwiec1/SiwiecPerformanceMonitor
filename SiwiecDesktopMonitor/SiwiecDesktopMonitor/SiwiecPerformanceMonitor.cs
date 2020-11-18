@@ -79,7 +79,7 @@ namespace SiwiecDesktopMonitor
 
             memory_available.Text = "Available Memory:" + "   " + (int)availableMemoryCounter.NextValue() + "  " + "mb";
 
-            memory_cached.Text = "Cached Memory:" + "   " + (int)cacheMemoryCounter.NextValue()/1000 + "  " + "gb";
+            memory_cached.Text = "Cached Memory:" + "   " + (int)cacheMemoryCounter.NextValue()/1000000+ "  " + "mb";
 
             system_uptime.Text = "System Up-time" + "   " + ((int)systemUpTimeCounter.NextValue() / 60) / 60 + "  " + "hrs.";
 
