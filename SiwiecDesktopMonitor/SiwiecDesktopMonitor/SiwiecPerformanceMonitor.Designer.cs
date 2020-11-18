@@ -59,6 +59,9 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
+            this.timer3 = new System.Windows.Forms.Timer(this.components);
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cpu_time
@@ -160,16 +163,16 @@
             // 
             // tb_object
             // 
-            this.tb_object.Location = new System.Drawing.Point(111, 248);
+            this.tb_object.Location = new System.Drawing.Point(84, 248);
             this.tb_object.Name = "tb_object";
-            this.tb_object.Size = new System.Drawing.Size(100, 20);
+            this.tb_object.Size = new System.Drawing.Size(110, 20);
             this.tb_object.TabIndex = 9;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.Color.Silver;
-            this.label2.Location = new System.Drawing.Point(119, 221);
+            this.label2.Location = new System.Drawing.Point(81, 221);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 10;
@@ -177,23 +180,23 @@
             // 
             // tb_counter
             // 
-            this.tb_counter.Location = new System.Drawing.Point(276, 248);
+            this.tb_counter.Location = new System.Drawing.Point(236, 248);
             this.tb_counter.Name = "tb_counter";
-            this.tb_counter.Size = new System.Drawing.Size(100, 20);
+            this.tb_counter.Size = new System.Drawing.Size(150, 20);
             this.tb_counter.TabIndex = 11;
             // 
             // tb_instance
             // 
-            this.tb_instance.Location = new System.Drawing.Point(459, 248);
+            this.tb_instance.Location = new System.Drawing.Point(422, 248);
             this.tb_instance.Name = "tb_instance";
-            this.tb_instance.Size = new System.Drawing.Size(100, 20);
+            this.tb_instance.Size = new System.Drawing.Size(93, 20);
             this.tb_instance.TabIndex = 12;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Silver;
-            this.label3.Location = new System.Drawing.Point(273, 221);
+            this.label3.Location = new System.Drawing.Point(233, 221);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(44, 13);
             this.label3.TabIndex = 13;
@@ -203,7 +206,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.Color.Silver;
-            this.label4.Location = new System.Drawing.Point(456, 221);
+            this.label4.Location = new System.Drawing.Point(419, 221);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(48, 13);
             this.label4.TabIndex = 14;
@@ -229,7 +232,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(221, 285);
+            this.button1.Location = new System.Drawing.Point(226, 285);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
             this.button1.TabIndex = 17;
@@ -245,6 +248,7 @@
             this.btn_enter.TabIndex = 18;
             this.btn_enter.Text = "Enter";
             this.btn_enter.UseVisualStyleBackColor = true;
+            this.btn_enter.Click += new System.EventHandler(this.btn_enter_Click_1);
             // 
             // label7
             // 
@@ -340,12 +344,34 @@
             this.label14.TabIndex = 27;
             this.label14.Text = "Your Counter:";
             // 
+            // comboBox1
+            // 
+            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(561, 244);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(43, 26);
+            this.comboBox1.TabIndex = 28;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Silver;
+            this.label8.Location = new System.Drawing.Point(556, 221);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(50, 13);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Datatype";
+            // 
             // monitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(699, 345);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
@@ -412,6 +438,9 @@
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Timer timer3;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label8;
     }
 }
 

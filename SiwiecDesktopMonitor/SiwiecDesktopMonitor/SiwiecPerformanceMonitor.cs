@@ -17,7 +17,6 @@ namespace SiwiecDesktopMonitor
     public partial class monitor : Form
     {
 
-
         PerformanceCounter cpuTimeCounter = new PerformanceCounter("Processor Information", "% Processor Time", "_Total");
 
         PerformanceCounter cpuPerformanceCounter = new PerformanceCounter("Processor Information", "% Processor Performance", "_Total");
@@ -39,25 +38,32 @@ namespace SiwiecDesktopMonitor
         PerformanceCounter systemUpTimeCounter = new PerformanceCounter("System", "System Up Time");
 
 
+        PerformanceCounter userInputCounter;
 
         public monitor()
         {
             InitializeComponent();
+
+            string[] datatypes = { "%", "1.0", "1" };
+            
+            
+
+            comboBox1.Items.AddRange(datatypes);
+
+
+        }
+
+        public void btn_enter_Click_1(object sender, EventArgs e)
+        {
+            string Object = tb_object.Text.ToString();
+            string Counter = tb_counter.Text.ToString();
+            string Instance = tb_instance.Text.ToString();
+
+            userInputCounter = new PerformanceCounter(Object, Counter, Instance);
+
         }
 
 
-        //private void btn_enter_Click_1(object sender, EventArgs e)
-        //{
-        //    string Object = tb_object.Text.ToString();
-        //    string Counter = tb_counter.Text.ToString();
-        //    string Instance = tb_instance.Text.ToString();
-
-
-        //    PerformanceCounter userInputCounter = new PerformanceCounter(Object, Counter, Instance);
-
-
-        //    userinput.Text = "Your counter:" + " " + userInputCounter.NextValue() + "  ";
-        //}
 
         //Each time the timer ticks (in milliseconds) these counters refresh. This can be changed in timer properties.
         private void timer1_Tick(object sender, EventArgs e)
@@ -83,6 +89,11 @@ namespace SiwiecDesktopMonitor
 
             system_uptime.Text = "System Up-time" + "   " + ((int)systemUpTimeCounter.NextValue() / 60) / 60 + "  " + "hrs.";
 
+
+            if (userInputCounter != null)
+            {
+                userinput.Text = "Your counter:" + " " + userInputCounter.NextValue() + "  ";
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -92,8 +103,8 @@ namespace SiwiecDesktopMonitor
 
             counterList.Show();
 
-
-
         }
+
+
     }
 }

@@ -24,7 +24,7 @@ namespace SiwiecDesktopMonitor
         {
 
 
-            object1.Text = "PhysicalDisk";
+            object1.Text = "Processor";
             object1.ReadOnly = true;
             object1.BorderStyle = 0;
             object1.BackColor = this.BackColor;
@@ -46,14 +46,14 @@ namespace SiwiecDesktopMonitor
             object3.TabStop = false;
             object3.Multiline = true;
 
-            counter1.Text = "PhysicalDisk";
+            counter1.Text = "% Processor Time";
             counter1.ReadOnly = true;
             counter1.BorderStyle = 0;
             counter1.BackColor = this.BackColor;
             counter1.TabStop = false;
             counter1.Multiline = true;
 
-            counter2.Text = "PhysicalDisk";
+            counter2.Text = "% Processor Performance";
             counter2.ReadOnly = true;
             counter2.BorderStyle = 0;
             counter2.BackColor = this.BackColor;
@@ -67,14 +67,14 @@ namespace SiwiecDesktopMonitor
             counter3.TabStop = false;
             counter3.Multiline = true;
 
-            instance1.Text = "PhysicalDisk";
+            instance1.Text = "_Total";
             instance1.ReadOnly = true;
             instance1.BorderStyle = 0;
             instance1.BackColor = this.BackColor;
             instance1.TabStop = false;
             instance1.Multiline = true;
 
-            instance2.Text = "PhysicalDisk";
+            instance2.Text = "_Total";
             instance2.ReadOnly = true;
             instance2.BorderStyle = 0;
             instance2.BackColor = this.BackColor;
