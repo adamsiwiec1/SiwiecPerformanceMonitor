@@ -15,7 +15,6 @@ namespace SiwiecDesktopMonitor
     public partial class monitor : Form
     {
 
-
         PerformanceCounter cpuTimeCounter = new PerformanceCounter("Processor Information", "% Processor Time", "_Total");
 
         PerformanceCounter cpuPerformanceCounter = new PerformanceCounter("Processor Information", "% Processor Performance", "_Total");
@@ -31,9 +30,6 @@ namespace SiwiecDesktopMonitor
         PerformanceCounter cacheMemoryCounter = new PerformanceCounter("Memory", "Cache Bytes");
 
         PerformanceCounter systemUpTimeCounter = new PerformanceCounter("System", "System Up Time");
-
-
-
 
         public monitor()
         {
@@ -51,9 +47,6 @@ namespace SiwiecDesktopMonitor
 
             userinput.Text = "Your counter:" + " " + userInputCounter.NextValue() + "  ";
         }
-
-
-
 
         //Each time the timer ticks (in milliseconds) these counters refresh. This can be changed in timer properties.
         private void timer1_Tick(object sender, EventArgs e)
@@ -73,6 +66,17 @@ namespace SiwiecDesktopMonitor
             memory_cached.Text = "Cached Memory (mb):" + "   " + (int)cacheMemoryCounter.NextValue() + "  " + "mb";
 
             system_uptime.Text = "System Up-time" + "   " + ((int)systemUpTimeCounter.NextValue() / 60) / 60 + "  " + "hrs.";
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+            CounterList counterList = new CounterList();
+
+            counterList.Show();
+
+
 
         }
     }
