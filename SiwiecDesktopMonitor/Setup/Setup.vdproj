@@ -15,26 +15,26 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_0B972DFD2D2E49FB91647B0D821FE164"
+        "MsmKey" = "8:_5035A8C4BED942CD832DB3C03105C890"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_246789A18C8F4E759ED5036ABDEA8CA4"
-        "OwnerKey" = "8:_UNDEFINED"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_BCF680060DEE47008B09EF8E9EFC85A5"
+        "MsmKey" = "8:_C9EC284C10BC489487E07C12FE34CE0C"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_ED37E91268DBFECAA283DBD2FC0CE066"
-        "OwnerKey" = "8:_BCF680060DEE47008B09EF8E9EFC85A5"
+        "OwnerKey" = "8:_5035A8C4BED942CD832DB3C03105C890"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_FE569C993089478886DFBD1C369EB44B"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -46,7 +46,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_BCF680060DEE47008B09EF8E9EFC85A5"
+        "OwnerKey" = "8:_5035A8C4BED942CD832DB3C03105C890"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -67,6 +67,22 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
+            }
         }
         "Release"
         {
@@ -83,6 +99,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -112,30 +136,10 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_0B972DFD2D2E49FB91647B0D821FE164"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_C9EC284C10BC489487E07C12FE34CE0C"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\..\\..\\..\\Pictures\\Saved Pictures\\desktop icon.ico"
-            "TargetName" = "8:desktop icon.ico"
-            "Tag" = "8:"
-            "Folder" = "8:_DB816AF94061447EA1AC9EEDFCFC34FB"
-            "Condition" = "8:"
-            "Transitive" = "11:FALSE"
-            "Vital" = "11:TRUE"
-            "ReadOnly" = "11:FALSE"
-            "Hidden" = "11:FALSE"
-            "System" = "11:FALSE"
-            "Permanent" = "11:FALSE"
-            "SharedLegacy" = "11:FALSE"
-            "PackageAs" = "3:1"
-            "Register" = "3:1"
-            "Exclude" = "11:FALSE"
-            "IsDependency" = "11:FALSE"
-            "IsolateTo" = "8:"
-            }
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_246789A18C8F4E759ED5036ABDEA8CA4"
-            {
-            "SourcePath" = "8:..\\readme.txt"
-            "TargetName" = "8:readme.txt"
+            "SourcePath" = "8:Debug\\setup.exe"
+            "TargetName" = "8:setup.exe"
             "Tag" = "8:"
             "Folder" = "8:_DB816AF94061447EA1AC9EEDFCFC34FB"
             "Condition" = "8:"
@@ -181,6 +185,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_FE569C993089478886DFBD1C369EB44B"
+            {
+            "SourcePath" = "8:Debug\\Setup.msi"
+            "TargetName" = "8:Setup.msi"
+            "Tag" = "8:"
+            "Folder" = "8:_DB816AF94061447EA1AC9EEDFCFC34FB"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -251,7 +275,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:Setup"
         "ProductCode" = "8:{92A8000C-3966-40C1-A42C-2881E54B8039}"
-        "PackageCode" = "8:{5EC1205F-715D-4C44-8B68-18E07F44F17A}"
+        "PackageCode" = "8:{D69C31C9-2CE2-401C-83B2-F8B4FB314D78}"
         "UpgradeCode" = "8:{7376D921-6832-47C8-B1C3-2D1D0B40B194}"
         "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
@@ -371,29 +395,29 @@
         }
         "Shortcut"
         {
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_219B92B18A804162AD3E20C211506038"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_B514A72C01E24EBFB89E678306741A1A"
             {
-            "Name" = "8:Performance Monitor"
+            "Name" = "8:SiwiecPerformanceMonitor"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_BCF680060DEE47008B09EF8E9EFC85A5"
+            "Target" = "8:_5035A8C4BED942CD832DB3C03105C890"
             "Folder" = "8:_5B355202D3334A88996E7DFCA11CC275"
             "WorkingFolder" = "8:_DB816AF94061447EA1AC9EEDFCFC34FB"
-            "Icon" = "8:_0B972DFD2D2E49FB91647B0D821FE164"
+            "Icon" = "8:"
             "Feature" = "8:"
             }
-            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_8E09BC1B28A64E5DB5C92410DCD2A46D"
+            "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_EE03C6121DA34F888E6B34377B55547C"
             {
-            "Name" = "8:PerformanceMonitor"
+            "Name" = "8:SiwiecPerformanceMonitor"
             "Arguments" = "8:"
             "Description" = "8:"
             "ShowCmd" = "3:1"
             "IconIndex" = "3:0"
             "Transitive" = "11:FALSE"
-            "Target" = "8:_BCF680060DEE47008B09EF8E9EFC85A5"
+            "Target" = "8:_5035A8C4BED942CD832DB3C03105C890"
             "Folder" = "8:_8593106DA4B346F4B8D369C5F14EBCE4"
             "WorkingFolder" = "8:_DB816AF94061447EA1AC9EEDFCFC34FB"
             "Icon" = "8:"
@@ -798,7 +822,7 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BCF680060DEE47008B09EF8E9EFC85A5"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_5035A8C4BED942CD832DB3C03105C890"
             {
             "SourcePath" = "8:..\\SiwiecDesktopMonitor\\obj\\Debug\\SiwiecDesktopMonitor.exe"
             "TargetName" = "8:"
