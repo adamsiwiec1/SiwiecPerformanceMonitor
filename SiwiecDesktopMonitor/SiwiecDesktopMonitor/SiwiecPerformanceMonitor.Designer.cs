@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(monitor));
             this.cpu_time = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.memory_available = new System.Windows.Forms.Label();
@@ -223,12 +222,14 @@
             // 
             // label6
             // 
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.Silver;
-            this.label6.Location = new System.Drawing.Point(53, 180);
+            this.label6.Location = new System.Drawing.Point(12, 191);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(538, 27);
+            this.label6.Size = new System.Drawing.Size(634, 19);
             this.label6.TabIndex = 16;
-            this.label6.Text = resources.GetString("label6.Text");
+            this.label6.Text = "Please enter the following information exactly as it appears in Windows Perfmoran" +
+    "ce Monitor: (case-sensitive)";
             // 
             // button1
             // 
@@ -262,10 +263,12 @@
             // userinput
             // 
             this.userinput.AutoSize = true;
+            this.userinput.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.userinput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.userinput.ForeColor = System.Drawing.Color.Silver;
-            this.userinput.Location = new System.Drawing.Point(108, 146);
+            this.userinput.Location = new System.Drawing.Point(103, 147);
             this.userinput.Name = "userinput";
-            this.userinput.Size = new System.Drawing.Size(68, 13);
+            this.userinput.Size = new System.Drawing.Size(103, 22);
             this.userinput.TabIndex = 20;
             this.userinput.Text = "Your counter";
             // 
@@ -349,9 +352,9 @@
             this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Bold);
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(561, 244);
+            this.comboBox1.Location = new System.Drawing.Point(559, 244);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(43, 26);
+            this.comboBox1.Size = new System.Drawing.Size(47, 26);
             this.comboBox1.TabIndex = 28;
             // 
             // label8

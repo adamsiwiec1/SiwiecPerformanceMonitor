@@ -21,6 +21,21 @@ namespace SiwiecDesktopMonitor
             Application.Run(new monitor());
 
 
+
+                //try
+                //{
+
+            
+                //catch (Exception ex)
+                //{
+
+                //}
+            
+
+
         }
+
+
+    
     }
 }
