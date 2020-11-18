@@ -46,10 +46,37 @@ namespace SiwiecDesktopMonitor
 
             string[] datatypes = { "%", "1.0", "1" };
             
-            
-
             comboBox1.Items.AddRange(datatypes);
 
+
+        }
+
+
+        string datatype;
+        int datatype2;
+        
+
+        public string DatatypeSelector()
+        {
+
+
+            if (comboBox1.SelectedText == "%")
+            {
+                datatype = "%";
+
+            }
+            if (comboBox1.SelectedText == "1")
+            {
+                datatype2 = 1;
+
+            }
+            if (comboBox1.SelectedText == "1.0")
+            {
+                datatype2 = 2;
+
+            }
+
+            return datatype;
 
         }
 
@@ -89,10 +116,9 @@ namespace SiwiecDesktopMonitor
 
             system_uptime.Text = "System Up-time" + "   " + ((int)systemUpTimeCounter.NextValue() / 60) / 60 + "  " + "hrs.";
 
-
             if (userInputCounter != null)
             {
-                userinput.Text = "Your counter:" + " " + userInputCounter.NextValue() + "  ";
+                userinput.Text = "Your counter:" + " " + (datatype2 == 1 ? (int)userInputCounter.NextValue() : (double)userInputCounter.NextValue())  + " " + DatatypeSelector();
             }
         }
 
@@ -104,7 +130,5 @@ namespace SiwiecDesktopMonitor
             counterList.Show();
 
         }
-
-
     }
 }
