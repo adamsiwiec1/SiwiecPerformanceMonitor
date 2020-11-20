@@ -40,6 +40,8 @@ namespace SiwiecDesktopMonitor
 
         PerformanceCounter userInputCounter;
 
+        PerformanceCounter userInputCounterNoInstance;
+
         public monitor()
         {
             InitializeComponent();
@@ -85,9 +87,17 @@ namespace SiwiecDesktopMonitor
             string Object = tb_object.Text.ToString();
             string Counter = tb_counter.Text.ToString();
             string Instance = tb_instance.Text.ToString();
+            Instance = null;
 
-            userInputCounter = new PerformanceCounter(Object, Counter, Instance);
+            if (Instance != null)
+            {
+                userInputCounter = new PerformanceCounter(Object, Counter, Instance);
+            }
+            else
+            {
 
+                userInputCounterNoInstance = new PerformanceCounter(Object, Counter);
+            }
         }
 
 
@@ -116,10 +126,24 @@ namespace SiwiecDesktopMonitor
 
             system_uptime.Text = "System Up-time" + "   " + ((int)systemUpTimeCounter.NextValue() / 60) / 60 + "  " + "hrs.";
 
-            if (userInputCounter != null)
-            {
-                userinput.Text = "Your counter:" + " " + (datatype2 == 1 ? (int)userInputCounter.NextValue() : (double)userInputCounter.NextValue())  + " " + DatatypeSelector();
-            }
+
+
+
+
+                if (userInputCounter != null)
+                {
+
+                    //userinput.Text = "Your counter:" + " " + (datatype2 == 1 ? (int)userInputCounter.NextValue() : (double)userInputCounter.NextValue()) + " " + DatatypeSelector();
+
+                    userinput.Text = "Your counter:" + " " + userInputCounter.NextValue();
+                }
+                if (userInputCounterNoInstance != null)
+                {
+                //userinput.Text = "Your counter:" + " " + (datatype2 == 1 ? (int)userInputCounterNoInstance.NextValue() : (double)userInputCounterNoInstance.NextValue()) + " " + DatatypeSelector();
+
+                userinput.Text = "Your counter:" + " " + userInputCounterNoInstance.NextValue();
+                }
+            
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -128,6 +152,14 @@ namespace SiwiecDesktopMonitor
             CounterList counterList = new CounterList();
 
             counterList.Show();
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Testing testing = new Testing();
+
+            testing.Show();
 
         }
     }
